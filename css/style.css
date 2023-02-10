@@ -292,5 +292,40 @@ body {
     height: 25.8125rem;
   }
 }
+@media (max-width: 400px) {
+  .container00 {
+    width: 22.5rem;
+    height: 16rem;
+  }
+  .container00 .vertical-container {
+    width: 11.0625rem;
+    height: 19.75rem;
+    left: 0.975rem;
+  }
+  .log-in .vertical-container {
+    left: 10.5rem;
+  }
+  .container00 input {
+    padding: 0.3rem 0.8rem;
+    width: 9.75rem;
+  }
+  .container00 .container01 .horizontal-container .account-info.tLeft {
+    padding-right: 15.8rem;
+  }
+  .container00 .container01 .horizontal-container .account-info {
+    height: 16rem;
+    padding-left: 8.1rem;
+    margin-bottom: -16rem;
+    margin-left: 3rem;
+  }
+  .container00 .box::before {
+    left: 10.5rem;
+    top: 4.125rem;
+  }
+  .container00 .button {
+    padding: 0.5rem 0.9rem;
+    width: 5.75rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
