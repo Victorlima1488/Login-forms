@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #180148;
+  overflow: hidden;
+}
+
+.container00 {
+  position: relative;
+  width: 37.5rem;
+  height: 20rem;
+  margin: 1.875rem auto 0;
+  background-color: #999EDE;
+  top: 50%;
+  margin-top: -10rem;
+  transition: all 0.5s;
+}
+.container00 .box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container00 .box::before, .container00 .box::after {
+  content: " ";
+  position: absolute;
+  left: 9.5rem;
+  top: 3.125rem;
+  background-color: #9297E0;
+  transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
+  width: 18.75rem;
+  height: 17.8125rem;
+  transition: all 0.5s;
+}
+.container00 .box::after {
+  background-color: #A5AAE4;
+  top: -0.625rem;
+  left: 5rem;
+  width: 20rem;
+  height: 11.25rem;
+}
+.container00 .container01 {
+  position: relative;
+}
+.container00 .container01 .horizontal-container {
+  text-align: center;
+  font-size: 0;
+}
+.container00 .container01 .horizontal-container .account-info {
+  text-align: center;
+  font-size: 1rem;
+  width: 18.75rem;
+  height: 20rem;
+  display: inline-block;
+  vertical-align: top;
+  color: #FFF;
+  opacity: 1;
+}
+.container00 .vertical-container {
+  overflow: hidden;
+  position: absolute;
+  left: 1.875rem;
+  top: -1.875rem;
+  width: 19.0625rem;
+  height: 23.75rem;
+  background-color: #FFF;
+  box-shadow: 0 0 0.9375rem 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+.container00 .vertical-container::before {
+  content: "✔";
+  position: absolute;
+  left: 10rem;
+  top: -3.125rem;
+  color: #5356AD;
+  font-size: 8.125rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.container00 .vertical-container .form-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.container00 .table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.container00 .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 0.5s;
+  padding-left: 0.1875rem;
+  padding-right: 0;
+}
+.container00 input {
+  margin: 0 auto 0.9375rem;
+  padding: 0.75rem 1.0625rem;
+  display: block;
+  width: 15.75rem;
+  transition: all 0.3s;
+}
+.container00 p {
+  font-size: 1.25rem;
+  margin: 1.25rem;
+}
+.container00 .button {
+  cursor: pointer;
+  text-align: center;
+  margin: 1.875rem auto 0 auto;
+  width: 6.75rem;
+  color: #FFF;
+  background-color: #FF73B3;
+  opacity: 1;
+  transition: all 0.5s;
+  padding: 0.625rem 0.9375rem;
+  position: relative;
+  box-shadow: 0 0 0.625rem #FF73B3;
+}
+.container00 .button:hover {
+  opacity: 0.7;
+}
+.container00 .account-info .button {
+  box-shadow: none;
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+.container00 .form-item .table-cell {
+  margin-top: 7rem;
+  transition: all 0.5s;
+}
+.container00 .form-item.sing-up {
+  position: absolute;
+  left: -100%;
+  opacity: 0;
+}
+
+.log-in .vertical-container {
+  left: 16.6875rem;
+}
+
+.log-in .vertical-container .form-item.sing-up {
+  left: 0;
+  opacity: 1;
+}
+
+.log-in .vertical-container .form-item.log-in {
+  left: -100%;
+  opacity: 0;
+}
+
+.active {
+  width: 16.25rem;
+  height: 8.75rem;
+  margin-top: -4.375rem;
+}
+
+.active .vertical-container {
+  left: 1.875rem;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.active .vertical-container::before {
+  content: "✔";
+  position: absolute;
+  left: 3.1875rem;
+  top: 0.3125rem;
+  color: #5356ad;
+  font-size: 8.125rem;
+  opacity: 1;
+}
+
+.active input, .active .button, .active .account-info {
+  display: none;
+  opacity: 0;
+  padding: 0rem;
+  margin: 0 auto;
+  height: 0;
+}
+
+.active .form-item {
+  height: 100%;
+}
+
+.active .account-info {
+  height: 0%;
+  opacity: 0;
+}
+
+.rabbit {
+  width: 3.125rem;
+  height: 3.125rem;
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 3;
+  fill: #fff;
+}
+
+@media (max-width: 800px) {
+  .container00 {
+    width: 35.5rem;
+    top: 51%;
+  }
+  .container00 .container01 .horizontal-container .account-info {
+    width: 17.75rem;
+    padding-left: 2rem;
+  }
+  .container00 .container01 .horizontal-container .account-info.tLeft {
+    width: 17.75rem;
+    padding-right: 3rem;
+  }
+  .container00 p {
+    font-size: 1.1rem;
+  }
+  .log-in .vertical-container {
+    left: 15rem;
+  }
+}
+@media (max-width: 700px) {
+  .container00 {
+    width: 32.5rem;
+  }
+  .container00 .container01 .horizontal-container .account-info.tLeft {
+    width: 14.75rem;
+  }
+  .container00 .vertical-container {
+    width: 17.0625rem;
+  }
+  .container00 input {
+    padding: 0.6rem 1.0615rem;
+    width: 14.75rem;
+  }
+  .log-in .vertical-container {
+    left: 14rem;
+  }
+  .container00 p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .container00 {
+    width: 25.5rem;
+  }
+  .container00 .container01 .horizontal-container .account-info.tLeft {
+    width: 14.75rem;
+    margin-left: -11.1rem;
+  }
+  .container00 .container01 .horizontal-container .account-info {
+    margin-bottom: 7rem;
+    padding-left: 11.1rem;
+  }
+  .container00 .vertical-container {
+    width: 13.0625rem;
+  }
+  .container00 input {
+    padding: 0.4rem 1rem;
+    width: 10.75rem;
+  }
+  .log-in .vertical-container {
+    left: 11rem;
+  }
+  .container00 p {
+    font-size: 0.9rem;
+  }
+  .container00 .box::after {
+    width: 11rem;
+  }
+  .container00 .box::before {
+    width: 7.75rem;
+    height: 25.8125rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
